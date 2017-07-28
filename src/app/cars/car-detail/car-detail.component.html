@@ -1,0 +1,36 @@
+<div class="row">
+  <div class="col-xs-12">
+    <img
+      [src]="car.imagePath"
+      alt="{{ car.maker }}"
+      class="img-responsive"
+      style="max-height: 300px;">
+  </div>
+</div>
+<div class="row">
+  <div class="col-xs-12">
+    <h1>{{ car.maker }}</h1>
+  </div>
+</div>
+<div class="row">
+  <div class="col-xs-12">
+    <div
+      class="btn-group"
+      appDropdown>
+      <button
+        type="button"
+        class="btn btn-primary dropdown-toggle">
+        Manage Car <span class="caret"></span>
+      </button>
+      <ul class="dropdown-menu">
+        <li><a style="cursor: pointer;" (click)="onEditCar()">Edit Car</a></li>
+        <li><a style="cursor: pointer;" (click)="onDeleteCar()">Delete Car</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="col-xs-12">
+    {{ car.model }} {{ car.year }}
+  </div>
+</div>
