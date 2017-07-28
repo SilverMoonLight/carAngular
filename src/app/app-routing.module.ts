@@ -1,3 +1,5 @@
+import { CarEditComponent } from './cars/car-edit/car-edit.component';
+import { CarStartComponent } from './cars/car-start/car-start.component';
 
 import { Routes, RouterModule } from "@angular/router";
 import { CarsComponent } from "app/cars/cars.component";
@@ -7,7 +9,10 @@ import { NgModule } from "@angular/core";
 const appRoutes: Routes = [
     { path: '', redirectTo: '/cars', pathMatch: 'full' },
     { path: 'cars', component: CarsComponent, children: [
-        { path: ':id', component: CarDetailComponent}
+        { path: '', component: CarStartComponent },
+        { path: 'new', component: CarEditComponent},
+        { path: ':id', component: CarDetailComponent},
+        { path: ':id/edit', component: CarEditComponent }
     ]}
 ]
 

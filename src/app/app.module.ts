@@ -12,6 +12,8 @@ import { CarItemComponent } from './cars/car-list/car-item/car-item.component';
 import { HeaderComponent } from './header/header.component';
 import { DropdownDirective } from './shared/dropdown.directive';
 import { AppRoutingModule } from "app/app-routing.module";
+import { CarEditComponent } from './cars/car-edit/car-edit.component';
+import { CarStartComponent } from './cars/car-start/car-start.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +23,9 @@ import { AppRoutingModule } from "app/app-routing.module";
     CarDetailComponent,
     CarItemComponent,
     HeaderComponent,
-    DropdownDirective
+    DropdownDirective,
+    CarEditComponent,
+    CarStartComponent
   ],
   imports: [
     BrowserModule,
