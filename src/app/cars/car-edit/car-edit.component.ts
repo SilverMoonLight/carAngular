@@ -53,7 +53,7 @@ export class CarEditComponent implements OnInit {
 
     if(this.editMode) {
       const car = this.carService.getCar(this.id);
-      carMaker = car.maker;
+      carMaker = car.maker.name;
       carModel = car.model;
       carImagePath = car.imagePath;
       carYear = car.year;

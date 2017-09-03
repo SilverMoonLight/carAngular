@@ -1,3 +1,4 @@
+import { DataStorageService } from './../cars/data.storage.service';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -5,5 +6,9 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './header.component.html'
 })
 export class HeaderComponent {
+  constructor() {}
 
+  onFetchData() {
+    
+  }
 }

@@ -34,4 +34,5 @@ export class CarDetailComponent implements OnInit {
     this.router.navigate(['/cars']);
   }
 
+  
 }
